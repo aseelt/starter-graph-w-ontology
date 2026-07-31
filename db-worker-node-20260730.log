@@ -1,0 +1,44 @@
+2026-07-30T17:54:06.238Z [info] [frontend.worker.db-worker-node] {:db-worker-node-version {:build-time "2026-07-10T11:00:16.401736914Z", :revision "12fc66e-dirty"}, :line 578}
+2026-07-30T17:54:06.241Z [info] [frontend.worker.platform.node] {:db-worker-node-platform {:root-dir "C:\\Users\\aseel\\logseq", :vector-embedding-enabled? false, :embedding-endpoint nil, :embedding-model-id nil}, :line 701}
+2026-07-30T17:54:06.245Z [info] [frontend.worker.db-core] {:db-worker/init-service {:graph "logseq_db_starter-graph-w-ontology", :prev-graph nil, :import-type nil}, :line 1731}
+2026-07-30T17:54:06.248Z [info] [frontend.worker.db-core] {:db-worker/on-become-master-start {:repo "logseq_db_starter-graph-w-ontology", :import-type nil}, :line 1696}
+2026-07-30T17:54:06.249Z [info] [frontend.worker.db-core] {:db-worker/get-dbs-open {:repo "logseq_db_starter-graph-w-ontology", :db-path "C:\\Users\\aseel\\logseq\\graphs\\starter-graph-w-ontology\\db.sqlite"}, :line 362}
+2026-07-30T17:54:06.251Z [info] [frontend.worker.db-core] {:db-worker/get-dbs-open {:repo "logseq_db_starter-graph-w-ontology", :search-path "C:\\Users\\aseel\\logseq\\graphs\\starter-graph-w-ontology\\search\\db.sqlite"}, :line 367}
+2026-07-30T17:54:06.252Z [info] [frontend.worker.db-core] {:db-worker/get-dbs-open {:repo "logseq_db_starter-graph-w-ontology", :client-ops-path "C:\\Users\\aseel\\logseq\\graphs\\starter-graph-w-ontology\\client-ops-\\db.sqlite"}, :line 376}
+2026-07-30T17:54:06.586Z [info] [frontend.worker.db-core] {:gc-sqlite-dbs "gc current graph", :line 396}
+2026-07-30T17:54:06.589Z [stdio] [stdout] :debug :db-gc There's no garbage data that's need to be collected.
+2026-07-30T17:54:06.794Z [info] [frontend.worker.db-worker-node] {:db-worker-node-ready {:host "127.0.0.1", :port 64929}, :line 641}
+2026-07-30T20:27:48.125Z [severe] [frontend.worker.db-core] {:frontend.worker.db-core/apply-outliner-ops-failed #error {:message "Given built-in property's attributes are not editable", :data {:type :notification, :payload {:message "Can't change the given attributes for a built-in property", :type :error}, :property :block/alias, :disallowed-attributes #{:logseq.property/type}}}, :line 1474}
+2026-07-30T20:27:48.126Z [severe] [frontend.worker.db-worker-node] {:db-worker-node-invoke-failed {:status 400, :code :validation-error, :error #error {:message "Given built-in property's attributes are not editable", :data {:type :notification, :payload {:message "Can't change the given attributes for a built-in property", :type :error}, :property :block/alias, :disallowed-attributes #{:logseq.property/type}}}, :message "Can't change the given attributes for a built-in property", :method :thread-api/apply-outliner-ops}, :line 325}
+2026-07-30T20:32:17.653Z [stdio] [stdout] :debug :transact-failed :tx-meta {:outliner-op :update-property} :tx-data ([:db/add [:block/uuid #uuid "00000002-4197-3995-1000-000000000000"] :logseq.property/classes [:block/uuid "#person"]]) :error "#error {:message \"Nothing found for entity id (:block/uuid \\\"#person\\\")\", :data {:error :entity-id/missing, :entity-id (:block/uuid \"#person\")}}"
+2026-07-30T20:32:17.654Z [stdio] [console.error] Error: Nothing found for entity id (:block/uuid "#person")
+2026-07-30T20:32:17.654Z [stdio] [console.error]     at new hk (C:\Program Files\Logseq\resources\app.asar\js\db-worker-node.js:2:619197)
+2026-07-30T20:32:17.654Z [stdio] [console.error]     at jk (C:\Program Files\Logseq\resources\app.asar\js\db-worker-node.js:2:619496)
+2026-07-30T20:32:17.655Z [stdio] [console.error]     at ik (C:\Program Files\Logseq\resources\app.asar\js\db-worker-node.js:2:619457)
+2026-07-30T20:32:17.655Z [stdio] [console.error]     at fQ (C:\Program Files\Logseq\resources\app.asar\js\db-worker-node.js:2:951681)
+2026-07-30T20:32:17.655Z [stdio] [console.error]     at xQ (C:\Program Files\Logseq\resources\app.asar\js\db-worker-node.js:2:960695)
+2026-07-30T20:32:17.655Z [stdio] [console.error]     at zQ (C:\Program Files\Logseq\resources\app.asar\js\db-worker-node.js:2:968081)
+2026-07-30T20:32:17.655Z [stdio] [console.error]     at wPa (C:\Program Files\Logseq\resources\app.asar\js\db-worker-node.js:2:962866)
+2026-07-30T20:32:17.655Z [stdio] [console.error]     at RQ (C:\Program Files\Logseq\resources\app.asar\js\db-worker-node.js:2:975453)
+2026-07-30T20:32:17.655Z [stdio] [console.error]     at Function.<anonymous> (C:\Program Files\Logseq\resources\app.asar\js\db-worker-node.js:2:976924)
+2026-07-30T20:32:17.656Z [stdio] [console.error]     at hba (C:\Program Files\Logseq\resources\app.asar\js\db-worker-node.js:2:474950)
+2026-07-30T20:32:17.658Z [severe] [frontend.worker.db-worker-node] {:db-worker-node-invoke-failed {:status 500, :code :exception, :error #error {:message "Nothing found for entity id (:block/uuid \"#person\")", :data {:error :entity-id/missing, :entity-id (:block/uuid "#person")}}, :message "Nothing found for entity id (:block/uuid \"#person\")", :method :thread-api/apply-outliner-ops}, :line 325}
+2026-07-30T23:45:30.076Z [info] [frontend.worker.db-worker-node] {:db-worker-node-stopped nil, :line 638}
+2026-07-30T23:45:30.907Z [info] [frontend.worker.db-worker-node] {:db-worker-node-version {:build-time "2026-07-10T11:00:16.401736914Z", :revision "12fc66e-dirty"}, :line 578}
+2026-07-30T23:45:30.912Z [info] [frontend.worker.platform.node] {:db-worker-node-platform {:root-dir "C:\\Users\\aseel\\logseq", :vector-embedding-enabled? false, :embedding-endpoint nil, :embedding-model-id nil}, :line 701}
+2026-07-30T23:45:30.919Z [info] [frontend.worker.db-core] {:db-worker/init-service {:graph "logseq_db_starter-graph-w-ontology", :prev-graph nil, :import-type nil}, :line 1731}
+2026-07-30T23:45:30.920Z [info] [frontend.worker.db-core] {:db-worker/on-become-master-start {:repo "logseq_db_starter-graph-w-ontology", :import-type nil}, :line 1696}
+2026-07-30T23:45:30.923Z [info] [frontend.worker.db-core] {:db-worker/get-dbs-open {:repo "logseq_db_starter-graph-w-ontology", :db-path "C:\\Users\\aseel\\logseq\\graphs\\starter-graph-w-ontology\\db.sqlite"}, :line 362}
+2026-07-30T23:45:30.925Z [info] [frontend.worker.db-core] {:db-worker/get-dbs-open {:repo "logseq_db_starter-graph-w-ontology", :search-path "C:\\Users\\aseel\\logseq\\graphs\\starter-graph-w-ontology\\search\\db.sqlite"}, :line 367}
+2026-07-30T23:45:30.927Z [info] [frontend.worker.db-core] {:db-worker/get-dbs-open {:repo "logseq_db_starter-graph-w-ontology", :client-ops-path "C:\\Users\\aseel\\logseq\\graphs\\starter-graph-w-ontology\\client-ops-\\db.sqlite"}, :line 376}
+2026-07-30T23:45:31.008Z [info] [frontend.worker.db-worker-node] {:db-worker-node-ready {:host "127.0.0.1", :port 56727}, :line 641}
+2026-07-30T23:47:29.257Z [info] [frontend.worker.db-worker-node] {:db-worker-node-stopped nil, :line 638}
+2026-07-30T23:47:31.208Z [info] [frontend.worker.db-worker-node] {:db-worker-node-version {:build-time "2026-07-10T11:00:16.401736914Z", :revision "12fc66e-dirty"}, :line 578}
+2026-07-30T23:47:31.211Z [info] [frontend.worker.platform.node] {:db-worker-node-platform {:root-dir "C:\\Users\\aseel\\logseq", :vector-embedding-enabled? false, :embedding-endpoint nil, :embedding-model-id nil}, :line 701}
+2026-07-30T23:47:31.214Z [info] [frontend.worker.db-core] {:db-worker/init-service {:graph "logseq_db_starter-graph-w-ontology", :prev-graph nil, :import-type nil}, :line 1731}
+2026-07-30T23:47:31.214Z [info] [frontend.worker.db-core] {:db-worker/on-become-master-start {:repo "logseq_db_starter-graph-w-ontology", :import-type nil}, :line 1696}
+2026-07-30T23:47:31.216Z [info] [frontend.worker.db-core] {:db-worker/get-dbs-open {:repo "logseq_db_starter-graph-w-ontology", :db-path "C:\\Users\\aseel\\logseq\\graphs\\starter-graph-w-ontology\\db.sqlite"}, :line 362}
+2026-07-30T23:47:31.217Z [info] [frontend.worker.db-core] {:db-worker/get-dbs-open {:repo "logseq_db_starter-graph-w-ontology", :search-path "C:\\Users\\aseel\\logseq\\graphs\\starter-graph-w-ontology\\search\\db.sqlite"}, :line 367}
+2026-07-30T23:47:31.217Z [info] [frontend.worker.db-core] {:db-worker/get-dbs-open {:repo "logseq_db_starter-graph-w-ontology", :client-ops-path "C:\\Users\\aseel\\logseq\\graphs\\starter-graph-w-ontology\\client-ops-\\db.sqlite"}, :line 376}
+2026-07-30T23:47:31.267Z [info] [frontend.worker.db-worker-node] {:db-worker-node-ready {:host "127.0.0.1", :port 63490}, :line 641}
+2026-07-30T23:48:36.780Z [info] [frontend.worker.db-worker-node] {:db-worker-node-stopped nil, :line 638}

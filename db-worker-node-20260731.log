@@ -1,0 +1,42 @@
+2026-07-31T04:47:13.765Z [info] [frontend.worker.db-worker-node] {:db-worker-node-version {:build-time "2026-07-10T11:00:16.401736914Z", :revision "12fc66e-dirty"}, :line 578}
+2026-07-31T04:47:13.768Z [info] [frontend.worker.platform.node] {:db-worker-node-platform {:root-dir "C:\\Users\\aseel\\logseq", :vector-embedding-enabled? false, :embedding-endpoint nil, :embedding-model-id nil}, :line 701}
+2026-07-31T04:47:13.771Z [info] [frontend.worker.db-core] {:db-worker/init-service {:graph "logseq_db_starter-graph-w-ontology", :prev-graph nil, :import-type nil}, :line 1731}
+2026-07-31T04:47:13.773Z [info] [frontend.worker.db-core] {:db-worker/on-become-master-start {:repo "logseq_db_starter-graph-w-ontology", :import-type nil}, :line 1696}
+2026-07-31T04:47:13.775Z [info] [frontend.worker.db-core] {:db-worker/get-dbs-open {:repo "logseq_db_starter-graph-w-ontology", :db-path "C:\\Users\\aseel\\logseq\\graphs\\starter-graph-w-ontology\\db.sqlite"}, :line 362}
+2026-07-31T04:47:13.777Z [info] [frontend.worker.db-core] {:db-worker/get-dbs-open {:repo "logseq_db_starter-graph-w-ontology", :search-path "C:\\Users\\aseel\\logseq\\graphs\\starter-graph-w-ontology\\search\\db.sqlite"}, :line 367}
+2026-07-31T04:47:13.779Z [info] [frontend.worker.db-core] {:db-worker/get-dbs-open {:repo "logseq_db_starter-graph-w-ontology", :client-ops-path "C:\\Users\\aseel\\logseq\\graphs\\starter-graph-w-ontology\\client-ops-\\db.sqlite"}, :line 376}
+2026-07-31T04:47:13.845Z [info] [frontend.worker.db-worker-node] {:db-worker-node-ready {:host "127.0.0.1", :port 52807}, :line 641}
+2026-07-31T04:47:18.295Z [info] [frontend.worker.db-worker-node] {:db-worker-node-stopped nil, :line 638}
+2026-07-31T07:00:01.667Z [info] [frontend.worker.db-worker-node] {:db-worker-node-version {:build-time "2026-07-10T11:00:16.401736914Z", :revision "12fc66e-dirty"}, :line 578}
+2026-07-31T07:00:01.682Z [info] [frontend.worker.platform.node] {:db-worker-node-platform {:root-dir "C:\\Users\\aseel\\logseq", :vector-embedding-enabled? false, :embedding-endpoint nil, :embedding-model-id nil}, :line 701}
+2026-07-31T07:00:01.687Z [info] [frontend.worker.db-core] {:db-worker/init-service {:graph "logseq_db_starter-graph-w-ontology", :prev-graph nil, :import-type nil}, :line 1731}
+2026-07-31T07:00:01.689Z [info] [frontend.worker.db-core] {:db-worker/on-become-master-start {:repo "logseq_db_starter-graph-w-ontology", :import-type nil}, :line 1696}
+2026-07-31T07:00:01.691Z [info] [frontend.worker.db-core] {:db-worker/get-dbs-open {:repo "logseq_db_starter-graph-w-ontology", :db-path "C:\\Users\\aseel\\logseq\\graphs\\starter-graph-w-ontology\\db.sqlite"}, :line 362}
+2026-07-31T07:00:01.693Z [info] [frontend.worker.db-core] {:db-worker/get-dbs-open {:repo "logseq_db_starter-graph-w-ontology", :search-path "C:\\Users\\aseel\\logseq\\graphs\\starter-graph-w-ontology\\search\\db.sqlite"}, :line 367}
+2026-07-31T07:00:01.695Z [info] [frontend.worker.db-core] {:db-worker/get-dbs-open {:repo "logseq_db_starter-graph-w-ontology", :client-ops-path "C:\\Users\\aseel\\logseq\\graphs\\starter-graph-w-ontology\\client-ops-\\db.sqlite"}, :line 376}
+2026-07-31T07:06:00.047Z [info] [frontend.worker.db-worker-node] {:db-worker-node-ready {:host "127.0.0.1", :port 51883}, :line 641}
+2026-07-31T07:06:00.371Z [info] [frontend.worker.db-worker-node] {:db-worker-node-version {:build-time "2026-07-10T11:00:16.401736914Z", :revision "12fc66e-dirty"}, :line 578}
+2026-07-31T07:06:00.376Z [info] [frontend.worker.platform.node] {:db-worker-node-platform {:root-dir "C:\\Users\\aseel\\logseq", :vector-embedding-enabled? false, :embedding-endpoint nil, :embedding-model-id nil}, :line 701}
+2026-07-31T07:06:00.385Z [severe] [frontend.worker.db-worker-node-lock] {:db-worker-node-lock-create-failed #error {:message "graph already locked", :data {:code :repo-locked, :lock {:repo "logseq_db_starter-graph-w-ontology", :pid 2392, :lock-id "9a15a1b9-8a23-496e-bfed-6675513f9c40", :owner-source :electron}}}, :line 116}
+2026-07-31T07:06:00.386Z [stdio] [console.error] db-worker-node failed to start: graph already locked
+2026-07-31T07:06:00.388Z [stdio] [console.error] Error: graph already locked
+2026-07-31T07:06:00.388Z [stdio] [console.error]     at new hk (C:\Program Files\Logseq\resources\app.asar\js\db-worker-node.js:2:619197)
+2026-07-31T07:06:00.388Z [stdio] [console.error]     at jk (C:\Program Files\Logseq\resources\app.asar\js\db-worker-node.js:2:619496)
+2026-07-31T07:06:00.389Z [stdio] [console.error]     at ik (C:\Program Files\Logseq\resources\app.asar\js\db-worker-node.js:2:619457)
+2026-07-31T07:06:00.389Z [stdio] [console.error]     at C:\Program Files\Logseq\resources\app.asar\js\db-worker-node.js:2:2245072
+2026-07-31T07:06:00.390Z [stdio] [console.error]     at g4 (C:\Program Files\Logseq\resources\app.asar\js\db-worker-node.js:2:1661708)
+2026-07-31T07:06:00.390Z [stdio] [console.error]     at bwb (C:\Program Files\Logseq\resources\app.asar\js\db-worker-node.js:2:2244933)
+2026-07-31T07:06:00.390Z [stdio] [console.error]     at C:\Program Files\Logseq\resources\app.asar\js\db-worker-node.js:2:2246780
+2026-07-31T07:06:00.390Z [stdio] [console.error]     at Object.resolve (C:\Program Files\Logseq\resources\app.asar\js\db-worker-node.js:2:1662693)
+2026-07-31T07:06:00.390Z [stdio] [console.error]     at J8a (C:\Program Files\Logseq\resources\app.asar\js\db-worker-node.js:2:1658260)
+2026-07-31T07:06:00.391Z [stdio] [console.error]     at C:\Program Files\Logseq\resources\app.asar\js\db-worker-node.js:2:1659809
+2026-07-31T12:30:20.618Z [info] [frontend.worker.db-worker-node] {:db-worker-node-stopped nil, :line 638}
+2026-07-31T12:30:29.363Z [info] [frontend.worker.db-worker-node] {:db-worker-node-version {:build-time "2026-07-10T11:00:16.401736914Z", :revision "12fc66e-dirty"}, :line 578}
+2026-07-31T12:30:29.367Z [info] [frontend.worker.platform.node] {:db-worker-node-platform {:root-dir "C:\\Users\\aseel\\logseq", :vector-embedding-enabled? false, :embedding-endpoint nil, :embedding-model-id nil}, :line 701}
+2026-07-31T12:30:29.371Z [info] [frontend.worker.db-core] {:db-worker/init-service {:graph "logseq_db_starter-graph-w-ontology", :prev-graph nil, :import-type nil}, :line 1731}
+2026-07-31T12:30:29.372Z [info] [frontend.worker.db-core] {:db-worker/on-become-master-start {:repo "logseq_db_starter-graph-w-ontology", :import-type nil}, :line 1696}
+2026-07-31T12:30:29.374Z [info] [frontend.worker.db-core] {:db-worker/get-dbs-open {:repo "logseq_db_starter-graph-w-ontology", :db-path "C:\\Users\\aseel\\logseq\\graphs\\starter-graph-w-ontology\\db.sqlite"}, :line 362}
+2026-07-31T12:30:29.376Z [info] [frontend.worker.db-core] {:db-worker/get-dbs-open {:repo "logseq_db_starter-graph-w-ontology", :search-path "C:\\Users\\aseel\\logseq\\graphs\\starter-graph-w-ontology\\search\\db.sqlite"}, :line 367}
+2026-07-31T12:30:29.378Z [info] [frontend.worker.db-core] {:db-worker/get-dbs-open {:repo "logseq_db_starter-graph-w-ontology", :client-ops-path "C:\\Users\\aseel\\logseq\\graphs\\starter-graph-w-ontology\\client-ops-\\db.sqlite"}, :line 376}
+2026-07-31T12:30:29.453Z [info] [frontend.worker.db-worker-node] {:db-worker-node-ready {:host "127.0.0.1", :port 61715}, :line 641}
+2026-07-31T12:43:31.395Z [info] [frontend.worker.db-worker-node] {:db-worker-node-stopped nil, :line 638}
